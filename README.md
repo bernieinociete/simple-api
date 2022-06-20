@@ -32,3 +32,36 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running the project for development
 
     $ npm run dev
+
+## API Endpoints
+
+    http://localhost:4230/api/getAllAccounts
+
+    http://localhost:4230/api/getAccount 
+    Sample Body (JSON)
+    {
+        "acc_id" : "2"
+    }
+
+    http://localhost:4230/api/createAccount 
+    Sample Body (JSON)
+    {
+        "acc_fname" : "Bernie"
+        "acc_mname" : "Legua"
+        "acc_lname" : "Inociete"
+    }
+    
+    http://localhost:4230/api/updateAccount
+    Sample Body (JSON)
+    {
+        "acc_id" : "2"
+        "acc_fname" : "Don Maron"
+        "acc_mname" : ""
+        "acc_lname" : "Ramos"
+    }
+    
+    http://localhost:4230/api/deleteAccount
+    Sample Body (JSON)
+    {
+        "acc_id" : "2"
+    }
